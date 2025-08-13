@@ -1,0 +1,18 @@
+{
+    "name": "Metal Man",
+    "description": "A machine consciousness made out of the various metals found in this land.",
+    "icon": {
+        "id": "minecraft:copper_ingot"
+    },
+    "impact": 3,
+    "powers": [
+        "legacy:mm-knockback-resistance",
+        "legacy:mm-dense-superstructure",
+        "legacy:mm-efficency",
+        "legacy:mm-anoxic-operation",
+        "legacy:mm-natural-armor",
+        "legacy:mm-unwieldy-shape",
+        "legacy:mm-temperature-resistance",
+        "legacy:mm-iron-gut"
+    ]
+}

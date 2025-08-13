@@ -1,0 +1,12 @@
+{
+    "name": "Efficency",
+    "description": "You are permanently enhastened.",
+    "type": "origins:modify_break_speed",
+    "modifier": {
+            "id": "monk:mk-chop_cut",
+            "operation": "multiply_base_multiplicative",
+            "amount": 0.5
+                },
+    "hidden": false
+    
+}
