@@ -1,0 +1,18 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:respiration",
+    "minecraft:depth_strider",
+    "minecraft:fire_aspect",
+    "minecraft:silk_touch",
+    "minecraft:unbreaking",
+    "minecraft:fortune",
+    "minecraft:infinity",
+    "minecraft:luck_of_the_sea",
+    "minecraft:lure",
+    "minecraft:loyalty",
+    "minecraft:binding_curse",
+    "minecraft:vanishing_curse",
+    "minecraft:frost_walker"
+  ]
+}
