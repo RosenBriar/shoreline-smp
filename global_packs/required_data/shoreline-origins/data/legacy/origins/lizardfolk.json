@@ -1,0 +1,21 @@
+{
+    "name": "Lizardfolk",
+    "description": "Lovechild of a goblin and a serpent.",
+    "icon": {
+        "id": "minecraft:green_dye"
+    },
+    "impact": 1,
+    "powers": [
+        "legacy:lf_small_stature",
+        "legacy:lf_prey",
+        "legacy:lf_scavenger_diet",
+        "legacy:lf_swim_speed",
+        "legacy:lf_hydrodynamics",
+        "legacy:lf_breathe",
+        "legacy:lf_lucky",
+        "legacy:lf_scrap_armor",
+        "legacy:lf_iron_gut",
+        "legacy:lf_jury_rigging",
+        "legacy:lf_scales"
+    ]
+}

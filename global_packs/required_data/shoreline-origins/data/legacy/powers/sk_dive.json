@@ -1,0 +1,21 @@
+{
+    "hidden": true,
+    "type": "origins:modify_velocity",
+    "modifier": {
+        "id": "selkie:sk_dive",
+        "operation": "multiply_base_multiplicative",
+        "amount": 0.5
+      },
+    "axes": [
+      "y"
+    ],
+    "condition": {
+        "type": "origins:and",
+        "conditions": [{
+            "type": "origins:swimming"
+        }, {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        }]
+    }
+}

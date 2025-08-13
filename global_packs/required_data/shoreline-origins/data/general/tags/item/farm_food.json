@@ -1,0 +1,16 @@
+{
+    "replace": true,
+    "values": [
+        "minecraft:melon_slice",
+        "minecraft:carrot",
+        "minecraft:golden_carrot",
+        "minecraft:potato",
+        "minecraft:baked_potato",
+        "minecraft:poisonous_potato",
+        "minecraft:beetroot",
+        "minecraft:bread",
+        "minecraft:cookie",
+        "minecraft:pumpkin_pie",
+        "minecraft:beetroot_soup"
+    ]
+}

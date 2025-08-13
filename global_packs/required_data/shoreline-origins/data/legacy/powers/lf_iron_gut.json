@@ -1,0 +1,21 @@
+{
+    "type": "origins:multiple",
+    "name": "Iron Guts",
+    "description": "Having spent so much time in the wild, you now resist the effects of hunger and poison.",
+    "liver": {
+        "type": "origins:effect_immunity",
+        "effects": [
+            "minecraft:hunger",
+            "minecraft:poison"
+        ]
+    },
+    "low_health": {
+        "type": "origins:attribute",
+        "modifier": {
+            "id": "lizardfolk:lf_iron_gut/low_health",
+            "attribute": "minecraft:generic.max_health",
+            "operation": "add_value",
+            "amount": -2
+        }
+    }
+}

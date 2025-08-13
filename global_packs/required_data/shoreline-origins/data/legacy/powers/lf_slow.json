@@ -1,0 +1,9 @@
+{
+    "type": "origins:modify_swim_speed",
+    "modifier": {
+        "id": "lizardfolk:lf_slow",
+        "operation": "add_value",
+        "amount": -0.025
+    },
+    "hidden": true
+}

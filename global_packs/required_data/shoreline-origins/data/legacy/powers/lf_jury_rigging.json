@@ -1,0 +1,31 @@
+{
+    "type": "origins:action_on_block_break",
+    "name": "Jury Rigging",
+    "description": "Unenchanted tools you use have a base 50% chance to not lose durability.",
+    "entity_action": {
+        "type": "origins:modify_inventory",
+        "slot": "weapon.mainhand",
+        "item_condition": {
+            "type": "origins:all_of",
+            "conditions": [{
+                "type": "origins:damageable"
+            },
+            {
+                "type": "origins:enchantment",
+                "comparison": ">=",
+                "compare_to": 1,
+                "inverted": true
+            }]
+        },
+        "item_action": {
+            "type": "origins:chance",
+            "action": {
+                "type": "origins:damage",
+                "amount": -1,
+                "ignore_unbreaking": false
+            },
+            "chance": 0.50
+        }
+    },
+    "only_when_harvested": false
+}

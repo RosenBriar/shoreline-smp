@@ -1,0 +1,17 @@
+{
+    "type": "origins:action_on_callback",
+    "name": "Small Stature",
+    "description": "As a scavenger, you stand a little less tall than your peers.",
+    "entity_action_gained": {
+        "type": "origins:execute_command",
+        "command": "attribute @s minecraft:generic.scale base set 0.8"
+    },
+    "entity_action_respawned": {
+        "type": "origins:execute_command",
+        "command": "attribute @s minecraft:generic.scale base set 0.8"
+    },
+    "entity_action_lost": {
+        "type": "origins:execute_command",
+        "command": "attribute @s minecraft:generic.scale base set 1"
+    }
+}
