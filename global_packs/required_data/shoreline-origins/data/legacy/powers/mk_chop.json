@@ -5,12 +5,13 @@
     "cut": {
         "type": "origins:modify_break_speed",
         "block_condition": {
+            "id": "monk:mk_chop",
             "type": "origins:in_tag",
             "tag": "general:logs"
         },
         "modifier": {
-            "operation": "multiply_base",
-            "value": 1
+            "operation": "multiply_base_multiplicative",
+            "amount": 1
         }
     },
     "punch": {
@@ -27,8 +28,9 @@
             }
         },
         "modifier": {
-            "operation": "add_base_late",
-            "value": 1
+            "id": "monk:mk_chop",
+            "operation": "multiply_base_multiplicative",
+            "amount": 1
         }
     }
 }

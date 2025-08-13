@@ -2,7 +2,8 @@
     "order": 1,
     "origins": [
         "legacy:lizardfolk",
-        "legacy:selkie"
+        "legacy:selkie",
+        "legacy:monk"
     ],
     "replace": true,
     "name": "Origin",
