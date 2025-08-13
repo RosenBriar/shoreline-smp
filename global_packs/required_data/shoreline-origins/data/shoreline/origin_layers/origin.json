@@ -3,7 +3,8 @@
     "origins": [
         "legacy:lizardfolk",
         "legacy:selkie",
-        "legacy:monk"
+        "legacy:monk",
+        "shoreline:vampire"
     ],
     "replace": true,
     "name": "Origin",

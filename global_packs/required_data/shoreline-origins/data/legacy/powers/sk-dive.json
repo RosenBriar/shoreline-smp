@@ -2,7 +2,7 @@
     "hidden": true,
     "type": "origins:modify_velocity",
     "modifier": {
-        "id": "selkie:sk_dive",
+        "id": "selkie:sk-dive",
         "operation": "multiply_base_multiplicative",
         "amount": 0.5
       },

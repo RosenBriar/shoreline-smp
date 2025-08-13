@@ -1,7 +1,7 @@
 {
     "type": "origins:modify_swim_speed",
     "modifier": {
-        "id": "lizardfolk:lf_swim_speed",
+        "id": "lizardfolk:lf-swim-speed",
         "operation": "add_value",
         "amount": 0.025
     },

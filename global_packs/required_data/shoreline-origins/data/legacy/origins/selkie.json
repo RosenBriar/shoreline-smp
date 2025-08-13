@@ -7,16 +7,16 @@
     "impact": 3,
     "powers": [
         "origins:aquatic",
-        "origins:water_breathing",
-        "origins:aqua_affinity",
-        "legacy:sk_swimming",
-        "legacy:sk_dive",
-        "legacy:sk_darksight",
-        "legacy:sk_slippery",
-        "legacy:sk_leap",
-        "legacy:sk_breathe",
-        "legacy:sk_diet",
-        "legacy:sk_doublefish",
-        "legacy:sk_lightarmor"
+        "origins:water-breathing",
+        "origins:aqua-affinity",
+        "legacy:sk-swimming",
+        "legacy:sk-dive",
+        "legacy:sk-darksight",
+        "legacy:sk-slippery",
+        "legacy:sk-leap",
+        "legacy:sk-breathe",
+        "legacy:sk-diet",
+        "legacy:sk-doublefish",
+        "legacy:sk-lightarmor"
     ]
 }

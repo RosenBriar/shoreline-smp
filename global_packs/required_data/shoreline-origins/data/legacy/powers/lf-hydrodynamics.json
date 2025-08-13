@@ -72,12 +72,12 @@
     },
     "rising_action": {
         "type": "origins:grant_power",
-        "power": "legacy:lf_slow",
+        "power": "legacy:lf-slow",
         "source": "legacy:lizardfolk"
     },
     "falling_action": {
         "type": "origins:revoke_power",
-        "power": "legacy:lf_slow",
+        "power": "legacy:lf-slow",
         "source": "legacy:lizardfolk"
     }
 }

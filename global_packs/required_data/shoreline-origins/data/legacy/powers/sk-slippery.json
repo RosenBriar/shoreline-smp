@@ -5,7 +5,7 @@
     "weak": {
         "type": "origins:attribute",
         "modifier": {
-            "id": "selkie:sk_slippery/weak",
+            "id": "selkie:sk-slippery_weak",
             "attribute": "minecraft:generic.max_health",
             "operation": "add_value",
             "amount": -6
@@ -21,7 +21,7 @@
             "chance": 0.2
         },
         "modifier": {
-            "id": "selkie:sk_slippery/slip",
+            "id": "selkie:sk-slippery_slip",
             "operation": "set_total",
             "amount": 0
         }

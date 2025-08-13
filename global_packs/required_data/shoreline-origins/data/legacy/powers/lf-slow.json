@@ -1,7 +1,7 @@
 {
     "type": "origins:modify_swim_speed",
     "modifier": {
-        "id": "lizardfolk:lf_slow",
+        "id": "lizardfolk:lf-slow",
         "operation": "add_value",
         "amount": -0.025
     },

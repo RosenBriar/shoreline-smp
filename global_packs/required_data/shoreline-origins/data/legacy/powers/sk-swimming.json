@@ -3,7 +3,7 @@
     "description": "No one can contest your mobility under the ocean's waves.",
     "type": "origins:modify_swim_speed",
     "modifier": {
-        "id": "selkie:sk_swimming",
+        "id": "selkie:sk-swimming",
         "operation": "add_value",
         "amount": 0.035
     },

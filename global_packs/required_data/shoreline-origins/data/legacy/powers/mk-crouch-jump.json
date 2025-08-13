@@ -3,7 +3,7 @@
     "name": "Crouch Jump",
     "description": "Hold [SNEAK] and press [JUMP] to perform a slightly higher jump.",
     "modifier": {
-        "id": "monk:mk_crouch_jump",
+        "id": "monk:mk-crouch-jump",
         "operation": "add_base_early",
         "amount": 0.05
     },

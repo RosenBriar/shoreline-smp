@@ -9,10 +9,10 @@
             "minecraft:poison"
         ]
     },
-    "low_health": {
+    "low-health": {
         "type": "origins:attribute",
         "modifier": {
-            "id": "lizardfolk:lf_iron_gut/low_health",
+            "id": "lizardfolk:lf-iron-gut_low-health",
             "attribute": "minecraft:generic.max_health",
             "operation": "add_value",
             "amount": -2

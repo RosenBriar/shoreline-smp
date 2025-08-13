@@ -1,7 +1,7 @@
 {
     "type": "origins:attribute",
     "modifier": {
-        "id": "lizardfolk:lf_scales",
+        "id": "lizardfolk:lf-scales",
         "attribute": "minecraft:generic.armor_toughness",
         "operation": "add_value",
         "amount": 8

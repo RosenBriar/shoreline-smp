@@ -4,14 +4,14 @@
     "doublecod": {
         "type": "origins:replace_loot_table",
         "replace": {
-            "minecraft:entities/cod": "legacy:entities/sk_cod"
+            "minecraft:entities/cod": "legacy:entities/sk-cod"
         },
         "priority": 1
     },
     "doublesalmon": {
         "type": "origins:replace_loot_table",
         "replace": {
-            "minecraft:entities/salmon": "legacy:entities/sk_salmon"
+            "minecraft:entities/salmon": "legacy:entities/sk-salmon"
         },
         "priority": 1
     },

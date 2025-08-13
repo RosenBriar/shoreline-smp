@@ -5,11 +5,11 @@
     "cut": {
         "type": "origins:modify_break_speed",
         "block_condition": {
-            "id": "monk:mk_chop",
             "type": "origins:in_tag",
             "tag": "general:logs"
         },
         "modifier": {
+            "id": "monk:mk-chop_cut",
             "operation": "multiply_base_multiplicative",
             "amount": 1
         }
@@ -28,7 +28,7 @@
             }
         },
         "modifier": {
-            "id": "monk:mk_chop",
+            "id": "monk:mk-chop_punch",
             "operation": "multiply_base_multiplicative",
             "amount": 1
         }

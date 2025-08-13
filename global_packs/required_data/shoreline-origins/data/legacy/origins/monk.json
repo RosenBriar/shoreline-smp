@@ -6,8 +6,8 @@
     },
     "impact": 1,
     "powers": [
-        "legacy:mk_chop",
-        "legacy:mk_athletics",
-        "legacy:mk_crouch_jump"
+        "legacy:mk-chop",
+        "legacy:mk-athletics",
+        "legacy:mk-crouch-jump"
     ]
 }

@@ -1,7 +1,7 @@
 {
     "type": "origins:attribute",
     "modifier": {
-        "id": "lizardfolk:lf_lucky",
+        "id": "lizardfolk:lf-lucky",
         "attribute": "minecraft:generic.luck",
         "operation": "add_value",
         "amount": 8
