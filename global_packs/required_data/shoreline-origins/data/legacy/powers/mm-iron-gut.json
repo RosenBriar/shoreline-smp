@@ -1,0 +1,70 @@
+{
+    "type": "origins:multiple",
+    "name": "Iron Gut",
+    "description": "you can only eat metal ingots.",
+    "eat-copper":{
+        "type": "origins:edible_item",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:copper_ingot"
+        }
+    },
+    "food_component": {
+        "nutrition": 4,
+        "saturation": 2.4
+    },
+    "use_action": "eat"
+    },
+    "eat-iron":{
+        "type": "origins:edible_item",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "food_component": {
+        "nutrition": 5,
+        "saturation": 6
+    },
+    "use_action": "eat"
+    },
+   "eat-gold":{
+        "type": "origins:edible_item",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:gold_ingot"
+        }
+    },
+    "food_component": {
+        "nutrition": 8,
+        "saturation": 12.8
+    },
+    "use_action": "eat"
+    },
+    "eat-netherite":{
+        "type": "origins:edible_item",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:netherite_ingot"
+        }
+    },
+    "food_component": {
+        "nutrition": 14,
+        "saturation": 21.2
+    },
+    "use_action": "eat"
+    },
+    "no_food":{
+    "type": "origins:prevent_item_use",
+        "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "tag": "general:food"
+        }
+    }
+    }
+}
