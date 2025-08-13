@@ -1,0 +1,77 @@
+{"type": "origins:restrict_armor",
+    "name": "Unwieldy Shape",
+    "description": "Due to your shape its impossible for you to find any armor that fits you.",
+    "head": {
+        "type": "origins:ingredient",
+        "ingredient": [{
+            "item": "minecraft:golden_helmet"
+        }, {
+            "item": "minecraft:iron_helmet"
+        }, {
+            "item": "minecraft:netherite_helmet"
+        }, {
+            "item": "minecraft:leather_helmet"
+        }, {
+            "item": "minecraft:chainmail_helmet"
+        }]
+    },
+    "chest": {
+        "type": "origins:ingredient",
+        "ingredient": [{
+            "item": "minecraft:golden_chestplate"
+        }, {
+            "item": "minecraft:iron_chestplate"
+        }, {
+            "item": "minecraft:netherite_chestplate"
+        }, {
+            "item": "minecraft:leather_chestplate"
+        }, {
+            "item": "minecraft:chainmail_chestplate"
+        }]
+    },
+    "legs": {
+        "type": "origins:ingredient",
+        "ingredient": [{
+            "item": "minecraft:golden_leggings"
+        }, {
+            "item": "minecraft:iron_leggings"
+        }, {
+            "item": "minecraft:netherite_leggings"
+        }, {
+            "item": "minecraft:leather_leggings"
+        }, {
+            "item": "minecraft:chainmail_leggings"
+        }]
+    },
+    "feet": {
+        "type": "origins:ingredient",
+        "ingredient": [{
+            "item": "minecraft:golden_boots"
+        }, {
+            "item": "minecraft:iron_boots"
+        }, {
+            "item": "minecraft:netherite_boots"
+        }, {
+            "item": "minecraft:leather_boots"
+        }, {
+            "item": "minecraft:chainmail_boots"
+        }]
+    },
+    "badges": [{
+        "type": "origins:tooltip",
+        "sprite": "minecraft:textures/item/iron_helmet.png",
+        "text": "Restricted Armors: Leather, Chainmail, Iron, Gold, Netherite"
+    }, {
+        "type": "origins:tooltip",
+        "sprite": "minecraft:textures/item/iron_chestplate.png",
+        "text": "Restricted Armors: Leather, Chainmail, Iron, Gold, Netherite"
+    }, {
+        "type": "origins:tooltip",
+        "sprite": "minecraft:textures/item/iron_leggings.png",
+        "text": "Restricted Armors: Leather, Chainmail, Iron, Gold, Netherite"
+    }, {
+        "type": "origins:tooltip",
+        "sprite": "minecraft:textures/item/iron_boots.png",
+        "text": "Restricted Armors: Leather, Chainmail, Iron, Gold, Netherite"
+    }]
+}

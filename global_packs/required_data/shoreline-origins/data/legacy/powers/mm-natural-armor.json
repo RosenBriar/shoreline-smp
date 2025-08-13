@@ -1,0 +1,12 @@
+{
+    "type": "origins:attribute",
+    "name": "Natural Armor",
+    "description": "It only makes sense for something made from iron to have the durability of it.",
+    "modifier": {
+        "id": "metal-man:mm-natural-armor",
+        "attribute": "minecraft:generic.armor",
+        "operation": "add_value",
+        "amount": 15
+    },
+    "hidden": false
+}
