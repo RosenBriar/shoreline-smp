@@ -1,0 +1,10 @@
+{
+    "type": "origins:modify_jump",
+    "name": "Higher Jump",
+    "description": "Due to your taller height and more slender stature you can naturally jump higher.",
+    "modifier": {
+        "id": "elf:el-crouch-jump",
+        "operation": "add_base_early",
+        "amount": 0.05
+    }
+}

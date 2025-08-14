@@ -1,0 +1,9 @@
+{
+    "type": "origins:modify_insomnia_ticks",
+    "name": "No Sleep",
+    "description": "You do not require sleep anymore.",
+    "modifier": {
+        "operation": "set_total",
+        "amount": 0
+    }
+}

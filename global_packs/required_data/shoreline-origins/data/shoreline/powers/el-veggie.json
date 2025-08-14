@@ -1,0 +1,11 @@
+{
+    "type": "origins:prevent_item_use",
+    "name": "Vegetarian",
+    "description": "You are disgusted by the thought of eating meat.",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "tag": "general:carnivore"
+        }
+    }
+}

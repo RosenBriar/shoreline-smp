@@ -2,6 +2,14 @@
     "type": "origins:multiple",
     "name": "Iron Gut",
     "description": "you can only eat metal ingots.",
+    "exhaustion":{
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "id": "metalman:mm-iron-gut_exhaustion",
+        "operation": "multiply_base_additive",
+        "amount": -0.25
+    }
+    },
     "eat-copper":{
         "type": "origins:edible_item",
     "item_condition": {
@@ -11,8 +19,8 @@
         }
     },
     "food_component": {
-        "nutrition": 4,
-        "saturation": 2.4
+        "nutrition": 5,
+        "saturation": 6
     },
     "use_action": "eat"
     },
@@ -25,8 +33,8 @@
         }
     },
     "food_component": {
-        "nutrition": 5,
-        "saturation": 6
+        "nutrition": 6.5,
+        "saturation": 10.4
     },
     "use_action": "eat"
     },
@@ -53,8 +61,8 @@
         }
     },
     "food_component": {
-        "nutrition": 14,
-        "saturation": 21.2
+        "nutrition": 20,
+        "saturation": 20
     },
     "use_action": "eat"
     },
