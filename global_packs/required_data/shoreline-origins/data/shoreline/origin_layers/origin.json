@@ -4,26 +4,9 @@
         "legacy:lizardfolk",
         "legacy:selkie",
         "legacy:monk",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        "legacy:metal-man",
-        "shoreline:vampire"
-=======
         "shoreline:metal-man",
         "shoreline:vampire",
         "shoreline:elf"
->>>>>>> Stashed changes
-=======
-        "shoreline:metal-man",
-        "shoreline:vampire",
-        "shoreline:elf"
->>>>>>> Stashed changes
-=======
-        "shoreline:metal-man",
-        "shoreline:vampire",
-        "shoreline:elf"
->>>>>>> Stashed changes
     ],
     "replace": true,
     "name": "Origin",
