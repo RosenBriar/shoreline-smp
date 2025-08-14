@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    "#minecraft:non_treasure",
+    "#minecraft:curse",
+    "minecraft:frost_walker",
+    "minecraft:mending"
+  ]
+}
