@@ -30,6 +30,14 @@
                         "type": "origins:empty"
                     }
                 }
+            }, {
+                "type": "origins:target",
+                "entity_condition": {
+                    "type": "origins:origin",
+                    "origin": "shoreline:metalman",
+                    "layer": "shoreline:origin",
+                    "inverted": true
+                }
             }]
         },
         "bientity_condition": {
@@ -55,13 +63,13 @@
                     "modifier": {
                         "id": "shoreline:vp-insatiable-hunger_feed",
                         "operation": "add_base_early",
-                        "value": 10
+                        "amount": 10
                     }
                 }
             }, {
                 "type": "origins:target_action",
                 "action": {
-                    "type": "origin:grant_power",
+                    "type": "origins:grant_power",
                     "power": "shoreline:vp-blood-poisoning",
                     "source": "vampire:vp-insatiable-hunger_feed"
                 }
