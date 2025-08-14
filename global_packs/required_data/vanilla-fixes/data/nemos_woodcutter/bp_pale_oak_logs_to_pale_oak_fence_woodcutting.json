@@ -1,0 +1,10 @@
+{
+  "type": "nemos-woodcutter:woodcutting",
+  "ingredient": {
+    "tag": "vanillabackport:pale_oak_logs"
+  },
+  "result": {
+    "count": 4,
+    "id": "vanillabackport:pale_oak_fence"
+  }
+}

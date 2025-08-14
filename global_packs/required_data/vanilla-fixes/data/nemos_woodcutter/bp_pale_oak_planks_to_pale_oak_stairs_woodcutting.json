@@ -1,0 +1,10 @@
+{
+  "type": "nemos-woodcutter:woodcutting",
+  "ingredient": {
+    "item": "vanillabackport:pale_oak_planks"
+  },
+  "result": {
+    "count": 1,
+    "id": "vanillabackport:pale_oak_stairs"
+  }
+}

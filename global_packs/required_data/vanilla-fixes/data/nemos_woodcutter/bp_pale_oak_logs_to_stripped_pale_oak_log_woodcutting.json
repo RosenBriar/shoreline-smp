@@ -1,0 +1,10 @@
+{
+  "type": "nemos-woodcutter:woodcutting",
+  "ingredient": {
+    "item": "vanillabackport:pale_oak_logs"
+  },
+  "result": {
+    "count": 1,
+    "id": "vanillabackport:pale_oak_log"
+  }
+}
