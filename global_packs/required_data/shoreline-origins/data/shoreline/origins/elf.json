@@ -1,0 +1,15 @@
+{
+    "name": "Elf",
+    "description": "Long lived nature loving fantasy creature.",
+    "icon": {
+        "id": "minecraft:bow"
+    },
+    "impact": 1,
+    "powers": [
+        "shoreline:el-nosleep",
+        "shoreline:el-athletics",
+        "shoreline:el-crouch-jump",
+        "shoreline:el-sneak",
+        "shoreline:el-veggie"
+    ]
+}
