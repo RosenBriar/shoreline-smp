@@ -13,6 +13,8 @@
     "minecraft:loyalty",
     "minecraft:binding_curse",
     "minecraft:vanishing_curse",
-    "minecraft:frost_walker"
+    "minecraft:frost_walker",
+    "extended-enchanting:replanting",
+    "extended-enchanting:solitude"
   ]
 }
