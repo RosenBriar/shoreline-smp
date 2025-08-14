@@ -1,0 +1,11 @@
+{
+    "name": "Vampire",
+    "description": "An unholy monster. Often reclusive, preferring to hide rather than make themselves known.",
+    "icon": {
+        "id": "minecraft:redstone"
+    },
+    "impact": 3,
+    "powers": [
+        "shoreline:vp-insatiable-hunger"
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "duration": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 90,
+        "start_value": 90,
+        "min_action": {
+            "type": "origins:remove_power",
+            "power": "shoreline:vp-blood-poisoning"
+        },
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "bar_index": 0,
+            "order": 0
+        }
+    },
+    "countdown": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:modify_resource",
+            "resource": "shoreline:vp-blood-poisoning_duration",
+            "modifier": {
+                "id": "shoreline:vp-blood-poisoning_countdown",
+                "operation": "add_base_early",
+                "value": -1
+            }
+        }
+    },
+    "haze": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 2,
+        "duration_per_stack": 40,
+        "tick_rate": 20,
+        "effects": [{
+            "id": "minecraft:darkness",
+            "ambient": true,
+            "show_particles": true,
+            "show_icon": false
+        }, {
+            "id": "minecraft:slowness",
+            "amplifier": 0,
+            "ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }],
+        "condition": {
+            "type": "origins:resource",
+            "resource": "shoreline:vp-blood-poisoning_duration",
+            "comparison": "<=",
+            "compare_to": 60
+        }
+    },
+    "agony": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 2,
+        "duration_per_stack": 40,
+        "tick_rate": 20,
+        "effects": [{
+            "id": "minecraft:blindness",
+            "ambient": true,
+            "show_particles": true,
+            "show_icon": false
+        }, {
+            "id": "minecraft:slowness",
+            "amplifier": 2,
+            "ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }, {
+            "id": "minecraft:hunger",
+            "amplifier": 0,
+            "ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }, {
+            "id": "minecraft:wither",
+            "amplifier": 0,
+            "ambient": true,
+            "show_particles": true,
+            "show_icon": false
+        }],
+        "condition": {
+            "type": "origins:resource",
+            "resource": "shoreline:vp-blood-poisoning_duration",
+            "comparison": "<=",
+            "compare_to": 30
+        }
+    }
+}

@@ -7,8 +7,8 @@
     "impact": 3,
     "powers": [
         "origins:aquatic",
-        "origins:water-breathing",
-        "origins:aqua-affinity",
+        "origins:water_breathing",
+        "origins:aqua_affinity",
         "legacy:sk-swimming",
         "legacy:sk-dive",
         "legacy:sk-darksight",
