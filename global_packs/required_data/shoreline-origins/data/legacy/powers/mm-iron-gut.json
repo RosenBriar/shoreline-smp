@@ -1,0 +1,78 @@
+{
+    "type": "origins:multiple",
+    "name": "Iron Gut",
+    "description": "you can only eat metal ingots.",
+    "exhaustion":{
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "id": "metalman:mm-iron-gut_exhaustion",
+        "operation": "multiply_base_additive",
+        "amount": -0.25
+    }
+    },
+    "eat-copper":{
+        "type": "origins:edible_item",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:copper_ingot"
+        }
+    },
+    "food_component": {
+        "nutrition": 5,
+        "saturation": 6
+    },
+    "use_action": "eat"
+    },
+    "eat-iron":{
+        "type": "origins:edible_item",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "food_component": {
+        "nutrition": 6.5,
+        "saturation": 10.4
+    },
+    "use_action": "eat"
+    },
+   "eat-gold":{
+        "type": "origins:edible_item",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:gold_ingot"
+        }
+    },
+    "food_component": {
+        "nutrition": 8,
+        "saturation": 12.8
+    },
+    "use_action": "eat"
+    },
+    "eat-netherite":{
+        "type": "origins:edible_item",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:netherite_ingot"
+        }
+    },
+    "food_component": {
+        "nutrition": 20,
+        "saturation": 20
+    },
+    "use_action": "eat"
+    },
+    "no_food":{
+    "type": "origins:prevent_item_use",
+        "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "tag": "general:food"
+        }
+    }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "order": 1,
+    "origins": [
+        "legacy:lizardfolk",
+        "legacy:selkie",
+        "legacy:monk",
+        "shoreline:metal-man",
+        "shoreline:vampire",
+        "shoreline:elf"
+    ],
+    "replace": true,
+    "name": "Origin",
+    "missing_name": "Empty",
+    "missing_description": "You feel empty, as though a core part of your being isn't present.",
+    "loading_priority": 999
+}
