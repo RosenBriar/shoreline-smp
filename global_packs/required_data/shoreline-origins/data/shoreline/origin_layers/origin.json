@@ -4,7 +4,7 @@
         "legacy:lizardfolk",
         "legacy:selkie",
         "legacy:monk",
-        "legacy:metal-man",
+        "shoreline:metal-man",
         "shoreline:vampire"
     ],
     "replace": true,

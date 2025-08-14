@@ -1,0 +1,109 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "foodplusid:beef_salad",
+            "required": false
+        },
+        {
+            "id": "foodplusid:pork_salad",
+            "required": false
+        },
+        {
+            "id": "foodplusid:chicken_salad",
+            "required": false
+        },
+        {
+            "id": "foodplusid:fish_salad",
+            "required": false
+        },
+        {
+            "id": "foodplusid:salmon_salad",
+            "required": false
+        },
+        {
+            "id": "foodplusid:mutton_salad",
+            "required": false
+        },
+        {
+            "id": "foodplusid:rabbit_salad",
+            "required": false
+        },
+        {
+            "id": "foodplusid:beef_sandwich",
+            "required": false
+        },
+        {
+            "id": "foodplusid:pork_sandwich",
+            "required": false
+        },
+        {
+            "id": "foodplusid:chicken_sandwich",
+            "required": false
+        },
+        {
+            "id": "foodplusid:fish_sandwich",
+            "required": false
+        },
+        {
+            "id": "foodplusid:salmon_sandwich",
+            "required": false
+        },
+        {
+            "id": "foodplusid:mutton_sandwich",
+            "required": false
+        },
+        {
+            "id": "foodplusid:rabbit_sandwich",
+            "required": false
+        },
+        {
+            "id": "foodplusid:meat_pie",
+            "required": false
+        },
+        {
+            "id": "foodplusid:baked_flesh",
+            "required": false
+        },
+        {
+            "id": "foodplusid:raw_frog_leg",
+            "required": false
+        },
+        {
+            "id": "foodplusid:cooked_frog_leg",
+            "required": false
+        },
+        {
+            "id": "foodplusid:awful_stew",
+            "required": false
+        },
+        {
+            "id": "foodplusid:raw_stride",
+            "required": false
+        },
+        {
+            "id": "foodplusid:cooked_stride",
+            "required": false
+        },
+        {
+            "id": "foodplusid:raw_sniffer_meat",
+            "required": false
+        },
+        {
+            "id": "foodplusid:cooked_sniffer_meat",
+            "required": false
+        },
+        {
+            "id": "foodplusid:bat_wing",
+            "required": false
+        },
+        {
+            "id": "foodplusid:cooked_bat_wing",
+            "required": false
+        },
+        {
+            "id": "foodplusid:tolchonka",
+            "required": false
+        }
+    ]
+}

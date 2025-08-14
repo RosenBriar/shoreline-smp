@@ -1,0 +1,61 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "aether_redux:blueberry_pie",
+            "required": false
+        },
+        {
+            "id": "aether_redux:enchanted_blueberry_pie",
+            "required": false
+        },
+        {
+            "id": "aether_redux:wynd_bagel",
+            "required": false
+        },
+        {
+            "id": "aether_redux:blueberry_bagel",
+            "required": false
+        },
+        {
+            "id": "aether_redux:wynd_oats",
+            "required": false
+        },
+        {
+            "id": "aether_redux:oatmeal",
+            "required": false
+        },
+        {
+            "id": "aether_redux:peppermint_leaf",
+            "required": false
+        },
+        {
+            "id": "aether_redux:zanberry",
+            "required": false
+        },
+        {
+            "id": "aether_redux:blue_gummy_swet",
+            "required": false
+        },
+        {
+            "id": "aether_redux:golden_gummy_swet",
+            "required": false
+        },
+        {
+            "id": "aether_redux:vanilla_gummy_swet",
+            "required": false
+        },
+        {
+            "id": "aether_redux:blue_swet_jelly",
+            "required": false
+        },
+        {
+            "id": "aether_redux:golden_swet_jelly",
+            "required": false
+        },
+        {
+            "id": "aether_redux:vanilla_swet_jelly",
+            "required": false
+        }
+    ]
+}

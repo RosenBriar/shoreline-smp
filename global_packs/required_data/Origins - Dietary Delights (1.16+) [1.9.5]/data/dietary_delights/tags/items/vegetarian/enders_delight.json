@@ -1,0 +1,41 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "endersdelight:uncanny_cookies",
+            "required": false
+        },
+        {
+            "id": "endersdelight:chorus_juice",
+            "required": false
+        },
+        {
+            "id": "endersdelight:chorus_pie",
+            "required": false
+        },
+        {
+            "id": "endersdelight:chorus_pie_slice",
+            "required": false
+        },
+        {
+            "id": "endersdelight:strange_eclair",
+            "required": false
+        },
+        {
+            "id": "endersdelight:chorus_stew_wood",
+            "required": false
+        },
+        {
+            "id": "endersdelight:chorus_stew",
+            "required": false
+        },
+        {
+            "id": "endersdelight:pearl_pasta_wood",
+            "required": false
+        },
+        {
+            "id": "endersdelight:pearl_pasta",
+            "required": false
+        }
+    ]
+}
