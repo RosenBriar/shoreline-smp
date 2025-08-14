@@ -1,0 +1,1 @@
+Ok so basically I have no idea WHY the twisted planks woodcutter recipes aren't working, yes I did try them in the proper file. I doubt they'll matter enough for anyone to bother with the woodcutter for them extensively anyways, so I'm just saying "screw it" and letting them be broken.
