@@ -1,0 +1,10 @@
+{
+  "type": "nemos-woodcutter:woodcutting",
+  "ingredient": {
+    "tag": "architects_palette:twisted_logs"
+  },
+  "result": {
+    "count": 4,
+    "id": "architects_palette:twisted_fence"
+  }
+}
