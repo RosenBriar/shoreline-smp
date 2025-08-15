@@ -1,0 +1,19 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:respiration",
+    "minecraft:depth_strider",
+    "minecraft:fire_aspect",
+    "minecraft:silk_touch",
+    "minecraft:unbreaking",
+    "minecraft:fortune",
+    "minecraft:infinity",
+    "minecraft:luck_of_the_sea",
+    "minecraft:lure",
+    "minecraft:loyalty",
+    "#minecraft:curse",
+    "minecraft:frost_walker",
+    "extended-enchanting:replanting",
+    "extended-enchanting:solitude"
+  ]
+}
