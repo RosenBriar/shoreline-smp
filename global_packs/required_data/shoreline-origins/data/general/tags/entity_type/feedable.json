@@ -1,6 +1,7 @@
 {
     "replace": true,
     "values": [
+        "minecraft:player",
         "minecraft:camel",
         "minecraft:cow",
         "minecraft:donkey",
