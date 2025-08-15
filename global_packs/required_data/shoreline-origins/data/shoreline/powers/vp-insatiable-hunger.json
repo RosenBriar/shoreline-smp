@@ -30,14 +30,6 @@
                         "type": "origins:empty"
                     }
                 }
-            }, {
-                "type": "origins:target",
-                "entity_condition": {
-                    "type": "origins:origin",
-                    "origin": "shoreline:metalman",
-                    "layer": "shoreline:origin",
-                    "inverted": true
-                }
             }]
         },
         "bientity_condition": {
@@ -45,7 +37,13 @@
             "condition": {
                 "type": "origins:all_of",
                 "conditions": [{
-                    "type": "origins:living"
+                    "type": "origins:in_tag",
+                    "tag": "general:feedable"
+                }, {
+                    "type": "origins:origin",
+                    "origin": "shoreline:metalman",
+                    "layer": "shoreline:origin",
+                    "inverted": true
                 }, {
                     "type": "origins:power",
                     "power": "shoreline:vp-blood-poisoning",
@@ -69,9 +67,28 @@
             }, {
                 "type": "origins:target_action",
                 "action": {
-                    "type": "origins:grant_power",
-                    "power": "shoreline:vp-blood-poisoning",
-                    "source": "vampire:vp-insatiable-hunger_feed"
+                    "type": "origins:and",
+                    "actions": [{
+                        "type": "origins:grant_power",
+                        "power": "shoreline:vp-blood-poisoning",
+                        "source": "vampire:vp-insatiable-hunger_feed"
+                    }, {
+                        "type": "origins:spawn_particles",
+                        "particle": {
+                            "type": "minecraft:block",
+                            "params": {
+                                "block_state": "minecraft:redstone_block"
+                            }
+                        },
+                        "count": 16,
+                        "speed": 0.0,
+                        "force": true,
+                        "spread": {
+                            "x": 0.5,
+                            "y": 0.5,
+                            "z": 0.5
+                        }
+                    }]
                 }
             }]
         }

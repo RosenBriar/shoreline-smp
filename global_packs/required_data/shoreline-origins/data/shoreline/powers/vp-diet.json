@@ -1,0 +1,19 @@
+{
+    "type": "origins:prevent_item_use",
+    "hidden": true,
+    "item_condition": {
+        "type": "origins:all_of",
+        "conditions": [{
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "origins:organic"
+            }
+        }, {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "general:raw_meat"
+            },
+            "inverted": true
+        }]
+    }
+}

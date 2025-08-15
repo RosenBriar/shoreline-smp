@@ -4,10 +4,10 @@
     "type": "origins:action_on_callback",
     "entity_action_gained": {
         "type": "origins:execute_command",
-        "command": "attribute @S minecraft:player.sneaking_speed  base set 0.5"
+        "command": "attribute @S minecraft:player.sneaking_speed base set 0.5"
     },
     "entity_action_lost": {
         "type": "origins:execute_command",
-        "command": "attribute @S minecraft:player.sneaking_speed  base set 0.3"
+        "command": "attribute @S minecraft:player.sneaking_speed base set 0.3"
     }
 }
