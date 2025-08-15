@@ -1,0 +1,15 @@
+{
+    "name": "Fairy",
+    "description": "Flying creature of a small stature.",
+    "icon": {
+        "id": "minecraft:pink_dye"
+    },
+    "impact": 3,
+    "powers": [
+        "shoreline:fy-small-frame",
+        "shoreline:fy-natural-flight",
+        "shoreline:fy-brittle-bones",
+        "shoreline:fy-frail",
+        "shoreline:fy-lightarmor"
+    ]
+}       

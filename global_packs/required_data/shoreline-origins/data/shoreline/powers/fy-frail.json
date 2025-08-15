@@ -1,0 +1,13 @@
+{
+    "name": "Brittle Bones",
+    "description": "You have half as much health.",
+    "type": "origins:action_on_callback",
+    "entity_action_gained": {
+        "type": "origins:execute_command",
+        "command": "attribute @s minecraft:generic.max_health base set 10"
+    },
+    "entity_action_lost": {
+        "type": "origins:execute_command",
+        "command": "attribute @s minecraft:generic.max_health base set 20"
+    }
+}

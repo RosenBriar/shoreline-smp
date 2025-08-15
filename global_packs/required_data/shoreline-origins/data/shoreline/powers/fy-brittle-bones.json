@@ -1,0 +1,13 @@
+{
+    "name": "Brittle Bones",
+    "description": "You take double fall damage.",
+    "type": "origins:action_on_callback",
+    "entity_action_gained": {
+        "type": "origins:execute_command",
+        "command": "attribute @s minecraft:generic.fall_damage_multiplier base set 2"
+    },
+    "entity_action_lost": {
+        "type": "origins:execute_command",
+        "command": "attribute @s minecraft:generic.fall_damage_multiplier base set 1"
+    }
+}
