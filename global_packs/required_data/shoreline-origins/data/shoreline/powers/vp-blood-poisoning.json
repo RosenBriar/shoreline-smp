@@ -9,11 +9,6 @@
         "min_action": {
             "type": "origins:remove_power",
             "power": "shoreline:vp-blood-poisoning"
-        },
-        "hud_render": {
-            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
-            "bar_index": 0,
-            "order": 0
         }
     },
     "countdown": {
@@ -26,6 +21,32 @@
                 "id": "shoreline:vp-blood-poisoning_countdown",
                 "operation": "add_base_early",
                 "amount": -1
+            }
+        }
+    },
+    "delay": {
+        "type": "origins:self_action_when_hit",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "shoreline:vp-blood-poisoning_duration",
+            "comparison": ">",
+            "compare_to": 60
+        },
+        "damage_condition": {
+            "type": "origins:attacker",
+            "entity_condition": {
+                "type": "origins:origin",
+                "origin": "shoreline:vampire",
+                "layer": "shoreline:origin"
+            }
+        },
+        "entity_action": {
+            "type": "origins:modify_resource",
+            "resource": "shoreline:vp-blood-poisoning_duration",
+            "modifier": {
+                "id": "shoreline:vp-blood-poisoning_delay",
+                "operation": "set_total",
+                "amount": 90
             }
         }
     },

@@ -1,0 +1,25 @@
+{
+    "type": "origins:multiple",
+    "name": "Fragile Form",
+    "description": "Your body isn't built like others. You have less health, but faster regeneration.",
+    "less-health": {
+        "type": "origins:modify_attribute",
+        "attribute": "minecraft:generic.max_health",
+        "modifier": {
+            "id": "vampire:vp-fragile_less-health",
+            "operation": "set_total",
+            "amount": 16
+        }
+    },
+    "no-regen": {
+        "type": "origins:disable_regen"
+    },
+    "no-hunger": {
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "id": "vampire:vp-fragile_no-hunger",
+        "operation": "set_total",
+        "amount": 0
+        }
+    }
+}

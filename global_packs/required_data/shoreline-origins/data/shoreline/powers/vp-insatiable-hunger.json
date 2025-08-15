@@ -4,14 +4,33 @@
     "description": "Hunger is replaced with a blood bar. While you can sustain yourself with raw meat, live prey will always feed you more.",
     "blood-bar": {
         "type": "origins:resource",
-        "min": -10,
-        "max": 40,
+        "min": 0,
+        "max": 60,
         "hud_render": {
             "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
             "bar_index": 5,
             "order": -1
         },
-        "start_value": 30
+        "start_value": 40
+    },
+    "grasp": {
+        "type": "origins:modify_damage_dealt",
+        "damage_condition": {
+            "type": "origins:type",
+            "damage_type": "player_attack"
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:empty"
+            }
+        },
+        "modifier": {
+            "id": "vampire:vp-insatiable-hunger_grasp",
+            "operation": "add_base_early",
+            "amount": 1
+        }
     },
     "feed": {
         "type": "origins:action_on_hit",
@@ -56,13 +75,24 @@
             "actions": [{
                 "type": "origins:actor_action",
                 "action": {
-                    "type": "origins:modify_resource",
-                    "resource": "shoreline:vp-insatiable-hunger_blood-bar",
-                    "modifier": {
-                        "id": "shoreline:vp-insatiable-hunger_feed",
-                        "operation": "add_base_early",
-                        "amount": 10
-                    }
+                    "type": "origins:and",
+                    "actions": [{
+                        "type": "origins:modify_resource",
+                        "resource": "shoreline:vp-insatiable-hunger_blood-bar",
+                        "modifier": {
+                            "id": "shoreline:vp-insatiable-hunger_feed",
+                            "operation": "add_base_early",
+                            "amount": 15
+                        }
+                    }, {
+                        "type": "origins:modify_resource",
+                        "resource": "shoreline:vp-blood-regeneration_well-fed",
+                        "modifier": {
+                            "id": "shoreline:vp-insatiable-hunger_feed",
+                            "operation": "add_base_early",
+                            "amount": 60
+                        }
+                    }]
                 }
             }, {
                 "type": "origins:target_action",
@@ -93,23 +123,19 @@
             }]
         }
     },
-    "grasp": {
-        "type": "origins:modify_damage_dealt",
-        "damage_condition": {
-            "type": "origins:type",
-            "damage_type": "player_attack"
-        },
+    "starvation": {
+        "type": "origins:action_over_time",
         "condition": {
-            "type": "origins:equipped_item",
-            "equipment_slot": "mainhand",
-            "item_condition": {
-                "type": "origins:empty"
-            }
+            "type": "origins:resource",
+            "resource": "shoreline:vp-insatiable-hunger_blood-bar",
+            "comparison": "<",
+            "compare_to": 10
         },
-        "modifier": {
-            "id": "vampire:vp-insatiable-hunger_grasp",
-            "operation": "add_base_early",
-            "amount": 1
-        }
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 1,
+            "damage_type": "minecraft:starve"
+        },
+        "interval": 60
     }
 }
