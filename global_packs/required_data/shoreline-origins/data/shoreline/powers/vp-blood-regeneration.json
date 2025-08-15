@@ -1,0 +1,69 @@
+{
+    "type": "origins:multiple",
+    "name": "Sanguine Recuperation",
+    "description": "Rather than eating food to heal, you use your blood. Blood will passively drain if you have not fed on a live creature in some time.",
+    "well-fed": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 60,
+        "start_value": 60
+    },
+    "fed-timer": {
+        "type": "origins:action_over_time",
+        "interval": 240,
+        "entity_action": {
+            "type": "origins:modify_resource",
+            "resource": "shoreline:vp-blood-poisoning_duration",
+            "modifier": {
+                "id": "shoreline:vp-blood-regeneration_well-fed",
+                "operation": "add_base_early",
+                "amount": -1
+            }
+        }
+    },
+    "hunger": {
+        "type": "origins:action_over_time",
+        "interval": 200,
+        "entity_action": {
+            "type": "origins:modify_resource",
+            "resource": "shoreline:vp-blood-poisoning_duration",
+            "modifier": {
+                "id": "shoreline:vp-insatiable-hunger_blood-bar",
+                "operation": "add_base_early",
+                "amount": -1
+            }
+        }
+    },
+    "recuperation": {
+        "type": "origins:action_over_time",
+        "interval": 30,
+        "condition": {
+            "type": "origins:all_of",
+            "conditions": [{
+                "type": "origins:health",
+                "comparison": "<",
+                "compare_to": 16
+            }, {
+                "type": "origins:resource",
+                "resource": "shoreline:vp-insatiable-hunger_blood-bar",
+                "comparison": ">=",
+                "compare_to": 2
+            }]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:modify_resource",
+                "resource": "shoreline:vp-insatiable-hunger_blood-bar",
+                "modifier": {
+                    "id": "shoreline:vp-blood-regeneration_recuperation",
+                    "operation": "add_base_early",
+                    "amount": -2
+                }
+            }, {
+                "type": "origins:heal",
+                "amount": 1
+            }]
+        }
+    }
+}

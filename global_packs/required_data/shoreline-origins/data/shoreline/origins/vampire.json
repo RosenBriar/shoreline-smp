@@ -7,6 +7,8 @@
     "impact": 3,
     "powers": [
         "shoreline:vp-insatiable-hunger",
+        "shoreline:vp-blood-regeneration",
+        "shoreline:vp-fragile",
         "shoreline:vp-diet"
     ]
 }

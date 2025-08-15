@@ -1,19 +1,45 @@
 {
-    "type": "origins:prevent_item_use",
+    "type": "origins:multiple",
     "hidden": true,
-    "item_condition": {
-        "type": "origins:all_of",
-        "conditions": [{
-            "type": "origins:ingredient",
-            "ingredient": {
-                "tag": "origins:organic"
-            }
-        }, {
+    "raw-meat": {
+        "type": "origins:prevent_item_use",
+        "hidden": true,
+        "item_condition": {
+            "type": "origins:all_of",
+            "conditions": [{
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "origins:organic"
+                }
+            }, {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "general:raw_meat"
+                },
+                "inverted": true
+            }]
+        }
+    },
+    "blood-siphon": {
+        "type": "origins:modify_food",
+        "item_condition": {
             "type": "origins:ingredient",
             "ingredient": {
                 "tag": "general:raw_meat"
-            },
-            "inverted": true
-        }]
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:modify_resource",
+                "resource": "shoreline:vp-insatiable-hunger_blood-bar",
+                "modifier": {
+                    "id": "shoreline:vp-insatiable-hunger_feed",
+                    "operation": "add_base_early",
+                    "amount": 3
+                }
+            }]
+        },
+        "always_edible": true
     }
 }
