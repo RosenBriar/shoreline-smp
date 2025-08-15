@@ -6,6 +6,7 @@
         "legacy:monk",
         "shoreline:metal-man",
         "shoreline:elf",
+        "shoreline:fairy",
         "shoreline:vampire"
     ],
     "replace": true,

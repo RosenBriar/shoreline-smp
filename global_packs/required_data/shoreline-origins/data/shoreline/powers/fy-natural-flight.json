@@ -1,0 +1,6 @@
+{   
+    "name": "Natural Flight",
+    "type": "origins:elytra_flight",
+    "description": "You can naturally take flight.",
+    "render_elytra": false
+}
