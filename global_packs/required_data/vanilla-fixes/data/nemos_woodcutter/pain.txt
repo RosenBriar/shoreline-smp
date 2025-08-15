@@ -1,2 +1,0 @@
-WHY ARE STONECUTTER RECIPES SO PAINFUL. WHY. WHO SAID "yes let us set it up so you need 5 million json files for each stonecutty set"
-technically the thought process makes sense but WHY COULDNT YOU HAVE BEEN A BIT LESS GOOD PRACTICES AND JUST DONE SOMETHING LESS PAINFUL TO USE
