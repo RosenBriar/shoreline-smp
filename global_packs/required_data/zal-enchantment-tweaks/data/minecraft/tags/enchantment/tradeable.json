@@ -11,9 +11,7 @@
     "minecraft:luck_of_the_sea",
     "minecraft:lure",
     "minecraft:loyalty",
-    "minecraft:binding_curse",
-    "minecraft:vanishing_curse",
-    "extended-enchanting:chorus_curse",
+    "#minecraft:curse",
     "minecraft:frost_walker",
     "extended-enchanting:replanting",
     "extended-enchanting:solitude"

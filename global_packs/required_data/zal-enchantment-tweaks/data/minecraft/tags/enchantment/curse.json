@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "zal:fragility_curse",
+    "zal:bluntness_curse",
+    "zal:hover_curse",
+    "zal:gravity_curse"    
+  ]
+}

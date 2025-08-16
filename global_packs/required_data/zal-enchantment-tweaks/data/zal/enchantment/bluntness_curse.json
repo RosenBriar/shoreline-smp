@@ -1,0 +1,47 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.zal.bluntness_curse"
+  },
+  "effects": {
+    "minecraft:damage": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": -2,
+            "per_level_above_first": 0
+          }
+        }
+      }
+    ],
+    "minecraft:hit_block": [
+      {
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:mining_fatigue",
+          "min_duration": 2,
+          "max_duration": 2,
+          "min_amplifier": 1,
+          "max_amplifier": 1
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 21,
+    "per_level_above_first": 11
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "primary_items": "#zal:enchantable/hand",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#zal:enchantable/hand",
+  "weight": 10
+}

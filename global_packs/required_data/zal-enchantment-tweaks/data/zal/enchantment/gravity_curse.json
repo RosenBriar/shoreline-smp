@@ -1,0 +1,31 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.zal.gravity_curse"
+  },
+  "max_cost": {
+    "base": 21,
+    "per_level_above_first": 11
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "primary_items": "#minecraft:enchantable/foot_armor",
+  "slots": [
+    "feet"
+  ],
+  "supported_items": "#minecraft:enchantable/foot_armor",
+  "weight": 10,
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:generic.gravity",
+        "id": "zal:high_gravity",
+        "amount": 1,
+        "operation": "add_value"
+      }
+    ]
+  }
+}
