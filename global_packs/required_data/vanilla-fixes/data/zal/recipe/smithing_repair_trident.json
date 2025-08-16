@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:lapis_lazuli"
+  },
+  "base": {
+    "item": "trident"
+  },
+  "template": {
+    "item": "minecraft:nautilus_shell"
+  },
+  "result": {
+    "id": "trident",
+    "components": {
+      "minecraft:damage": 1
+    }
+  }
+}

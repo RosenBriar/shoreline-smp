@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:blaze_powder"
+    },
+    "X": {
+      "item": "minecraft:glass_bottle"
+    },
+    "Y": {
+      "tag": "minecraft:bee_food"
+    }
+  },
+  "pattern": [
+    "#Y#",
+    " X ",
+    "# #"
+  ],
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "tag": "minecraft:bee_food"
+    },
+    {
+      "item": "minecraft:fermented_spider_eye"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:dragon_breath"
+  }
+}
