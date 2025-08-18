@@ -34,7 +34,7 @@
     },
     "feed": {
         "type": "origins:action_on_hit",
-        "cooldown": 60,
+        "cooldown": 40,
         "damage_condition": {
             "type": "origins:all_of",
             "conditions": [{
@@ -137,5 +137,22 @@
             "damage_type": "minecraft:starve"
         },
         "interval": 60
+    },
+    "reincarnate": {
+        "type": "origins:action_on_callback",
+        "entity_action_respawned": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:change_resource",
+                "resource": "shoreline:vp-insatiable-hunger_blood-bar",
+                "operation": "set",
+                "change": 20
+            }, {
+                "type": "origins:change_resource",
+                "resource": "shoreline:vp-blood-regeneration_well-fed",
+                "operation": "set",
+                "change": 60
+            }]
+        }
     }
 }

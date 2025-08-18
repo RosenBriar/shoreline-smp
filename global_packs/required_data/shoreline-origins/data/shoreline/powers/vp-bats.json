@@ -1,0 +1,28 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "death-watch": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 5,
+        "start_value": 5,
+        "min_action": {
+            "type": "origins:damage",
+            "amount": 10000,
+            "damage_type": "minecraft:generic"
+        }
+    },
+    "countdown": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:modify_resource",
+            "resource": "shoreline:vp-bats_death-watch",
+            "modifier": {
+                "id": "shoreline:vp-bats_countdown",
+                "operation": "add_base_early",
+                "amount": -1
+            }
+        }
+    }
+}

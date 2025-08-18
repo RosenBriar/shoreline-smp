@@ -1,0 +1,6 @@
+{
+    "type": "origins:night_vision",
+    "name": "Night Vision",
+    "description": "Low light environments are your forte. You have better vision in the dark.",
+    "strength": 0.4
+}
