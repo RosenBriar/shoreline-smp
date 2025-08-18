@@ -1,7 +1,7 @@
 {
     "type": "origins:multiple",
     "name": "Fragile Form",
-    "description": "Your body isn't built like others. You have less health, but faster regeneration.",
+    "description": "Your body isn't built like others. You have faster regeneration, but less health.",
     "less-health": {
         "type": "origins:modify_attribute",
         "attribute": "minecraft:generic.max_health",

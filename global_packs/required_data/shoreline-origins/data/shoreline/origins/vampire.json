@@ -8,6 +8,8 @@
     "powers": [
         "shoreline:vp-insatiable-hunger",
         "shoreline:vp-blood-regeneration",
+        "shoreline:vp-vampiric-dash",
+        "shoreline:vp-cursed-existence",
         "shoreline:vp-fragile",
         "shoreline:vp-diet"
     ]

@@ -1,0 +1,152 @@
+{
+    "type": "origins:multiple",
+    "name": "Monster of the Dark",
+    "description": "Your very existence goes against nature itself. Standing in the sun begins breaking down your body, fire deals extra damage against you, and water weakens you substantially.",
+    "blazing-star": {
+        "type": "origins:damage_over_time",
+        "interval": 15,
+        "onset_delay": 40,
+        "damage": 1,
+        "damage_type": "minecraft:on_fire",
+        "condition": {
+            "type": "origins:exposed_to_sun"
+        }
+    },
+    "erupting-flames": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:any_of",
+            "conditions": [{
+                "type": "origins:type",
+                "damage_type": "minecraft:fireworks"
+            }, {
+                "type": "origins:type",
+                "damage_type": "minecraft:fireball"
+            }, {
+                "type": "origins:type",
+                "damage_type": "minecraft:hot_floor"
+            }, {
+                "type": "origins:type",
+                "damage_type": "minecraft:in_fire"
+            }, {
+                "type": "origins:type",
+                "damage_type": "minecraft:lava"
+            }, {
+                "type": "origins:type",
+                "damage_type": "minecraft:on_fire"
+            }]
+        },
+        "modifier": {
+            "id": "vampire:vp-cursed-existence_erupting-flames",
+            "operation": "multiply_total_multiplicative",
+            "amount": 0.5
+        }
+    },
+    "tempting_fate": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 2,
+        "duration_per_stack": 20,
+        "tick_rate": 20,
+        "effects": [{
+            "id": "minecraft:slowness",
+            "ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }],
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": ">",
+            "compare_to": 0.0
+        }
+    },
+    "karmic-wrath": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -2,
+        "max_stacks": 2,
+        "duration_per_stack": 20,
+        "tick_rate": 20,
+        "effects": [{
+            "id": "minecraft:blindness",
+            "ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }, {
+            "id": "minecraft:darkness",
+            "amplifier": 0,
+            "ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }, {
+            "id": "minecraft:nausea",
+            "amplifier": 0,
+            "ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }],
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": ">",
+            "compare_to": 1.5
+        }
+    },
+    "endless-rot": {
+        "type": "origins:damage_over_time",
+        "interval": 40,
+        "onset_delay": 160,
+        "damage": 1,
+        "damage_type": "origins:hurt_by_water",
+        "protection_enchantment": "origins:water_protection",
+        "protection_effectiveness": 1.0,
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": ">",
+            "compare_to": 0.0
+        }
+    },
+    "deep-influence": {
+        "type": "origins:prevent_sprinting",
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": ">",
+            "compare_to": 0.0
+        }
+    },
+    "extended-atonement": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 2,
+        "duration_per_stack": 20,
+        "tick_rate": 20,
+        "effect": {
+            "id": "minecraft:water_breathing",
+            "show_particles": false,
+            "show_icon": false
+        },
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        }
+    },
+    "watery-grave": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.jump"
+        },
+        "entity_action": {
+            "type": "origins:grant_power",
+            "power": "shoreline:vp-endless-descent",
+            "source": "vampire:vp-cursed-existence_watery-grave"
+        },
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": ">",
+            "compare_to": 1.5
+        }
+    }
+}

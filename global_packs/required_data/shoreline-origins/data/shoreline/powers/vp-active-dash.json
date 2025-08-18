@@ -1,0 +1,132 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "timer": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 5,
+        "start_value": 5,
+        "min_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:spawn_particles",
+                "particle": {
+                    "type": "minecraft:smoke"
+                },
+                "count": 64,
+                "spread": {
+                    "x": 0.5,
+                    "y": 0.35,
+                    "z": 0.5
+                }
+            }, {
+                "type": "origins:revoke_power",
+                "power": "shoreline:vp-active-dash",
+                "source": "vampire:vp-vampiric-dash"
+            }]
+        }
+    },
+    "countdown": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:modify_resource",
+            "resource": "shoreline:vp-active-dash_timer",
+            "modifier": {
+                "id": "shoreline:vp-active-dash_countdown",
+                "operation": "add_base_early",
+                "amount": -1
+            }
+        }
+    },
+    "swiftness": {
+        "type": "origins:attribute",
+        "modifier": {
+            "id": "vampire:vp-active-dash_swiftness",
+            "attribute": "minecraft:generic.movement_speed",
+            "amount": 0.025,
+            "operation": "add_value"
+        }
+},
+    "invisibility": {
+        "type": "origins:invisibility",
+        "render_armor": false
+    },
+    "aesthetics": {
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:spawn_particles",
+                "particle": {
+                    "type": "minecraft:smoke"
+                },
+                "count": 64,
+                "spread": {
+                    "x": 0.5,
+                    "y": 0.35,
+                    "z": 0.5
+                }
+            }, {
+                "type": "origins:spawn_entity",
+                "entity_type": "minecraft:bat",
+                "entity_action": {
+                    "type": "origins:grant_power",
+                    "power": "shoreline:vp-bats",
+                    "source": "vampire:vp-active-dash_aesthetics"
+                }
+            }, {
+                "type": "origins:spawn_entity",
+                "entity_type": "minecraft:bat",
+                "entity_action": {
+                    "type": "origins:grant_power",
+                    "power": "shoreline:vp-bats",
+                    "source": "vampire:vp-active-dash_aesthetics"
+                }
+            }, {
+                "type": "origins:spawn_entity",
+                "entity_type": "minecraft:bat",
+                "entity_action": {
+                    "type": "origins:grant_power",
+                    "power": "shoreline:vp-bats",
+                    "source": "vampire:vp-active-dash_aesthetics"
+                }
+            }, {
+                "type": "origins:spawn_entity",
+                "entity_type": "minecraft:bat",
+                "entity_action": {
+                    "type": "origins:grant_power",
+                    "power": "shoreline:vp-bats",
+                    "source": "vampire:vp-active-dash_aesthetics"
+                }
+            }]
+        }
+    },
+    "cancel": {
+        "type": "origins:active_self",
+        "cooldown": 1,
+        "key": {
+            "key": "key.attack",
+            "continuous": false
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:spawn_particles",
+                "particle": {
+                    "type": "minecraft:smoke"
+                },
+                "count": 64,
+                "spread": {
+                    "x": 0.5,
+                    "y": 0.35,
+                    "z": 0.5
+                }
+            }, {
+                "type": "origins:revoke_power",
+                "power": "shoreline:vp-active-dash",
+                "source": "vampire:vp-vampiric-dash"
+            }]
+        }
+    }
+}

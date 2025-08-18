@@ -78,7 +78,7 @@
             }]
         }
     },
-    "fade": {
+    "darkness": {
         "type": "origins:stacking_status_effect",
         "min_stacks": 0,
         "max_stacks": 2,
@@ -111,7 +111,7 @@
             }]
         }
     },
-    "agony": {
+    "fade": {
         "type": "origins:stacking_status_effect",
         "min_stacks": 0,
         "max_stacks": 2,
@@ -134,10 +134,23 @@
             "ambient": true,
             "show_particles": false,
             "show_icon": false
-        }, {
+        }],
+        "condition": {
+            "type": "origins:resource",
+            "resource": "shoreline:vp-blood-poisoning_duration",
+            "comparison": "<=",
+            "compare_to": 30
+        }
+    },
+    "decay": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 2,
+        "duration_per_stack": 40,
+        "tick_rate": 20,
+        "effects": [{
             "id": "minecraft:wither",
-            "amplifier": 0,
-            "ambient": false,
+            "ambient": true,
             "show_particles": true,
             "show_icon": false
         }],
@@ -145,7 +158,34 @@
             "type": "origins:resource",
             "resource": "shoreline:vp-blood-poisoning_duration",
             "comparison": "<=",
-            "compare_to": 30
+            "compare_to": 15
+        }
+    },
+    "succumb": {
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:damage",
+            "amount": 10000,
+            "damage_type": "minecraft:player_attack"
+        },
+        "condition": {
+            "type": "origins:any_of",
+            "conditions": [{
+                "type": "origins:entity_type",
+                "entity_type": "minecraft:player",
+                "inverted": true
+            }, {
+                "type": "origins:entity_type",
+                "entity_type": "minecraft:villager",
+                "inverted": true
+            }]
+        }
+    },
+    "surpass": {
+        "type": "origins:action_on_callback",
+        "entity_action_respawned": {
+            "type": "origins:remove_power",
+            "power": "shoreline:vp-blood-poisoning"
         }
     }
 }
