@@ -1,0 +1,18 @@
+{
+    "name": "Feline",
+    "description": "Kibby :D",
+    "icon": {
+        "id": "minecraft:salmon"
+    },
+    "impact": 2,
+    "powers": [
+        "origins:scare_creepers",
+        "origins:fall_immunity",
+        "origins:velvet_paws",
+        "origins:nine_lives",
+        "shoreline:fl-night-vision",
+        "origins:carnivore",
+        "shoreline:fl-pounce",
+        "shoreline:fl-smalller-frame"
+    ]
+}

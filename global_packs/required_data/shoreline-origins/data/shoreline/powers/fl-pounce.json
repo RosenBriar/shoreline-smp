@@ -1,0 +1,24 @@
+{
+    "type": "origins:active_self",
+    "name": "Pounce",
+    "description": "Using your primary ability, pounce at the direction youre looking at.",
+    "cooldown": 60,
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [{
+            "type": "origins:add_velocity",
+            "space": "local",
+            "z":1
+        },{
+            "type": "origins:add_velocity",
+            "space": "world",
+            "y":0.5
+        }]
+        
+        
+    }
+}
