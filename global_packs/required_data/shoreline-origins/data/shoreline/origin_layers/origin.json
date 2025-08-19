@@ -7,7 +7,8 @@
         "shoreline:metal-man",
         "shoreline:elf",
         "shoreline:fairy",
-        "shoreline:vampire"
+        "shoreline:vampire",
+        "shoreline:feline"
     ],
     "replace": true,
     "name": "Origin",
