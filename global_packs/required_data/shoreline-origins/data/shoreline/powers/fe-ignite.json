@@ -1,0 +1,19 @@
+{
+    "type": "origins:action_on_entity_use", 
+    "name": "Ignite",
+    "description": "Burn entities by interacting with them! (Sneak to disable)",
+    "bientity_action": {
+        "type": "origins:target_action",
+        "action": {
+            "type": "origins:set_on_fire",
+            "duration": 8  
+            }      
+        },
+    "bientity_condition":{
+        "type":"origins:actor_condition",
+        "condition": {
+            "type": "origins:sneaking",
+            "inverted": true
+            }
+        } 
+}
