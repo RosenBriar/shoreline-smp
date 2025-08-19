@@ -1,0 +1,14 @@
+{
+    "name": "Flame Elemental",
+    "description": "Volatile avatar of nature's fury.",
+    "icon": {
+        "id": "minecraft:blaze_powder"
+    },
+    "impact": 2,
+    "powers": [
+        "shoreline:fe-flamewrought-form",
+        "shoreline:fe-ignite",
+        "shoreline:fe-to-cinders",
+        "shoreline:fe-burn-bright"
+    ]
+}
