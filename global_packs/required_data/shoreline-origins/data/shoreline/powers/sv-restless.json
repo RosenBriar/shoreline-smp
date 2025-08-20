@@ -1,0 +1,7 @@
+{
+    "name":"Restless",
+    "description": "You can't use a bed, but are faster at night.",
+    "type":"origins:prevent_sleep",
+    "message":"You have places to go.",
+    "set_spawn_point": false
+}

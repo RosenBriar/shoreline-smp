@@ -1,0 +1,10 @@
+{
+    "name":"Survivor's Stomach",
+    "description":"You get increased saturation from food.",
+    "type":"origins:modify_food",
+    "saturation_modifier":{
+        "id": "shoreline:better_saturation",
+        "operation":"add_base_early",
+        "amount": 4
+    }
+}

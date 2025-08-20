@@ -1,0 +1,15 @@
+{
+    "hidden": true,
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "id": "shoreline:faster_at_night",
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "add_multiplied_total",
+        "amount": 0.50
+    },
+    "tick_rate": 20,
+    "condition": {
+        "type": "origins:daytime",
+        "inverted": true
+    }   
+}
