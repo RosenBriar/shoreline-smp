@@ -1,0 +1,15 @@
+{
+    "name": "Scavenger",
+    "description": "Wandering thief, forager, or maybe something more.",
+    "icon": {
+        "id": "minecraft:chest"
+    },
+    "impact": 2,
+    "powers": [
+        "legacy:lf-small-stature",
+        "shoreline:sv-scavengers-pack",
+        "shoreline:sv-restless",
+        "shoreline:sv-scavengers-scramble",
+        "shoreline:sv-survivors-stomach"
+    ]
+}
