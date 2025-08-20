@@ -1,0 +1,7 @@
+{
+    "name": "Scavenger's Pack",
+    "description": "You carry a small pack that you keep on death.",
+    "type": "origins:inventory",
+    "drop_on_death": false,
+    "title": "Scavenger's Pack"
+}
