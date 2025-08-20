@@ -9,7 +9,8 @@
         "shoreline:fairy",
         "shoreline:vampire",
         "shoreline:feline",
-        "shoreline:flame-elemental"
+        "shoreline:flame-elemental",
+        "shoreline:scavenger"
     ],
     "replace": true,
     "name": "Origin",
