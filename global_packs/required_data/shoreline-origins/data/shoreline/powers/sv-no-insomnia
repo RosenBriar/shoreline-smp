@@ -1,0 +1,8 @@
+{
+    "type": "origins:modify_insomnia_ticks",
+    "hidden":true,
+    "modifier": {
+        "operation": "set_total",
+        "amount": 0
+    }
+}
