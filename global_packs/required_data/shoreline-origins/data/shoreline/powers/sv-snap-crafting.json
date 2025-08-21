@@ -1,0 +1,32 @@
+{
+    "hidden":true,
+    "type": "origins:recipe",
+    "recipe":{
+        "id": "shoreline:pipis",
+          "type": "minecraft:crafting_shaped",
+    "key": {
+        "#": {
+          "item": "minecraft:light_blue_dye"
+        },
+        "Y": {
+          "tag": "minecraft:fishes"
+        }
+    },    
+      "pattern": [
+       " # ",
+        "#Y#",
+        " # "
+     ],
+    "result": {
+     "components": {
+        "minecraft:item_name": "\"Pipis\"",
+          "minecraft:food": {
+           "nutrition": 3,
+          "saturation": 1
+          }
+       },
+     "count": 1,
+      "id": "minecraft:light_blue_dye"
+     }
+    }
+}
