@@ -1,0 +1,13 @@
+{
+
+  "item.inmis.baby_backpack": "Disabled!",
+  "item.inmis.ender_pouch": "Disabled!",
+
+  "item.inmis.frayed_backpack": "Iron Backpack",
+  "item.inmis.plated_backpack": "Gold Backpack",
+  "item.inmis.gilded_backpack": "Diamond Backpack",
+  "item.inmis.bejeweled_backpack": "Disabled!",
+  "item.inmis.blazing_backpack": "Disabled!",
+  "item.inmis.withered_backpack": "Disabled!",
+  "item.inmis.endless_backpack": "Disabled!"
+}
