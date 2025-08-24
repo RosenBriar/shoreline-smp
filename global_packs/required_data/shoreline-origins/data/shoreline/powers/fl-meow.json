@@ -1,0 +1,13 @@
+{
+    "name": "Meow :3",
+    "description": "Press secondary power key to Meow",
+    "type": "origins:active_self",
+    "key":{
+        "key": "key.origins.secondary_active",
+        "continuous": false
+    },
+    "entity_action":{
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.cat.ambient"
+    }
+}
