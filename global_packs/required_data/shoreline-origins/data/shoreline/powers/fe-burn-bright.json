@@ -2,7 +2,7 @@
     "name":"Burn Bright",
     "description": "Gain a damage boost while on fire.",
     "type": "origins:multiple",
-    "damage_increase":{
+    "damage-increase":{
 	    "type": "origins:modify_damage_dealt",
 	    "condition": {
 	    	"type": "origins:on_fire"

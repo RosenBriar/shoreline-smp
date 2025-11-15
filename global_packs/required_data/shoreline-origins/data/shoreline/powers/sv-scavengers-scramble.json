@@ -4,8 +4,8 @@
     "modifier": {
         "id": "shoreline:faster_at_night",
         "attribute": "minecraft:generic.movement_speed",
-        "operation": "add_multiplied_total",
-        "amount": 0.50
+        "operation": "add_multiplied_base",
+        "amount": 0.15
     },
     "tick_rate": 20,
     "condition": {
