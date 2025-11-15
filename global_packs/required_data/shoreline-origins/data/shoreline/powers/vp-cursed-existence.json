@@ -135,7 +135,8 @@
     "watery-grave": {
         "type": "origins:active_self",
         "key": {
-            "key": "key.jump"
+            "key": "key.jump",
+            "continuous": true
         },
         "entity_action": {
             "type": "origins:grant_power",
