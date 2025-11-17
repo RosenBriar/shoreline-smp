@@ -1,0 +1,12 @@
+{
+    "type": "origins:attribute",
+    "name": "Soft Paws",
+    "description": "Soft paws absorb some of your damage on landing",
+    "modifier": {
+        "id": "fox:softpaws",
+        "attribute": "minecraft:generic.safe_fall_distance",
+        "operation": "add_value",
+        "amount": 3
+    },
+    "hidden": false
+}
