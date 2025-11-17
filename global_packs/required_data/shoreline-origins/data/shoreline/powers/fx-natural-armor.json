@@ -1,0 +1,12 @@
+{
+    "type": "origins:attribute",
+    "name": "Natural Armor",
+    "description": "Your fur gives you a bit of extra armor .",
+    "modifier": {
+        "id": "fox:natural",
+        "attribute": "minecraft:generic.armor",
+        "operation": "add_value",
+        "amount": 1
+    },
+    "hidden": false
+}

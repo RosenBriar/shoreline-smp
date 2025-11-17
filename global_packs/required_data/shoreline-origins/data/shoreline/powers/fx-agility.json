@@ -1,0 +1,17 @@
+{
+    "type": "origins:attribute",
+    "name": "Agility",
+    "description": "When your stomach is full you run faster.",
+    "condition": {
+    "type": "origins:food_level",
+    "comparison": "<",
+    "compare_to": 20
+},
+    "modifier": {
+        "id": "fox:agility1",
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "add_value",
+        "amount": 0.05
+    },
+    "hidden": false
+}

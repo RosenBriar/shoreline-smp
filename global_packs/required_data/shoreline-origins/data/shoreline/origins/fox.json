@@ -1,0 +1,18 @@
+{
+    "name": "Fox",
+    "description": "Fops:3",
+    "icon": {
+        "id": "minecraft:emerald"
+    },
+    "impact": 2,
+    "powers": [
+        "shoreline:fx-claws",
+        "shoreline:fx-discomfort",
+        "shoreline:fx-fragile-frame",
+        "shoreline:fx-natural-armor",
+        "shoreline:fx-agility",
+        "shoreline:fx-soft-paws"
+
+
+    ]
+}
