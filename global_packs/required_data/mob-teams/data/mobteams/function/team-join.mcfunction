@@ -1,0 +1,11 @@
+execute as @e[type=#mobteams:arachnid,team=] run team join arachnid
+execute as @e[type=#mobteams:elemental,team=] run team join elemental
+execute as @e[type=#mobteams:ender,team=] run team join ender
+execute as @e[type=#mobteams:flora,team=] run team join flora
+execute as @e[type=#mobteams:guardian,team=] run team join guardian
+execute as @e[type=#mobteams:invertebrate,team=] run team join invertebrate
+execute as @e[type=#mobteams:pillager,team=] run team join pillager
+execute as @e[type=#mobteams:porcine,team=] run team join porcine
+execute as @e[type=#mobteams:shulk,team=] run team join shulk
+execute as @e[type=#mobteams:undead,team=] run team join undead
+execute as @e[type=#mobteams:wither,team=] run team join wither
